@@ -1,5 +1,5 @@
 FROM alpine:edge
 
-RUN apk update && apk add -U nmap
+RUN apk add --no-cache -U nmap
 
 ENTRYPOINT [ "nmap" ]
